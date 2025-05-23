@@ -49,10 +49,10 @@ tweets-space3
 
 ### 4. Crear la tabla en Redshift
 
-Ejecutar el script:
+Ejecutar el script desde consola:
 
 ```
-create-table.py
+python create-table.py
 ```
 
 Este script se encarga de crear la tabla donde se almacenarán los tweets procesados.
@@ -67,10 +67,10 @@ Configurar una **AWS Lambda** que se active cada vez que se cargue un nuevo arch
 tweets-test-123
 ```
 
-Esta Lambda ejecutará el script:
+Esta Lambda ejecutará el script desde consola:
 
 ```
-preprocess.py
+python preprocess.py
 ```
 
 ---
@@ -93,10 +93,10 @@ El script `preprocess.py`:
 
 ### 7️. Entrenar el modelo
 
-Para entrenar un modelo, ejecutar:
+Para entrenar un modelo, ejecutar desde consola:
 
 ```
-train.py
+python train.py
 ```
 
 Este script:
@@ -113,10 +113,10 @@ Este script:
 
 ### 8️. Realizar inferencias en batch
 
-Usar el script:
+Usar el script desde consola:
 
 ```
-inference.py
+python inference.py
 ```
 
 Este script:
@@ -140,10 +140,12 @@ Configurar una **AWS Lambda** que se ejecute al menos una vez al día, para:
 ##  Estructura de archivos
 
 ```
-├── create-table.py
-├── preprocess_modules.py
-├── train_modules.py
-└── inference_modules.py
+src
+  ├── utils.py
+  ├── create-table.py
+  ├── preprocess_modules.py
+  ├── train_modules.py
+  └── inference_modules.py
 ```
 
 ---
