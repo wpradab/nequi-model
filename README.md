@@ -70,14 +70,14 @@ tweets-test-123
 Esta Lambda ejecutará el script:
 
 ```
-preprocess_modules.py
+preprocess.py
 ```
 
 ---
 
 ### 6️. Ejecutar script de preprocesamiento
 
-El script `preprocess_modules.py`:
+El script `preprocess.py`:
 
 * Lee los datos crudos desde **S3**
 * Los transforma para entrenamiento e inferencia
@@ -96,7 +96,7 @@ El script `preprocess_modules.py`:
 Para entrenar un modelo, ejecutar:
 
 ```
-train_modules.py
+train.py
 ```
 
 Este script:
@@ -116,7 +116,7 @@ Este script:
 Usar el script:
 
 ```
-inference_modules.py
+inference.py
 ```
 
 Este script:
